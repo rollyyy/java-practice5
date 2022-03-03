@@ -3,8 +3,8 @@ package javas;
 public class first {
 	public static void main(String[] args) {
 		try {
-		method1(); // ¿¹¿Ü ¹ß»ı
-		System.out.println(6); // ¿¹¿Ü°¡ ¹ß»ıÇØ¼­ ½ÇÇàµÇÁö ¾Ê´Â´Ù.
+		method1(); // ì˜ˆì™¸ ë°œìƒ
+		System.out.println(6); // ì˜ˆì™¸ê°€ ë°œìƒí•´ì„œ ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
 		} catch(Exception e) {
 		System.out.println(7);
 		}
@@ -15,7 +15,7 @@ public class first {
 		System.out.println(1);
 		} catch(NullPointerException e) {
 		System.out.println(2);
-		throw e; // ¿¹¿Ü¸¦ ´Ù½Ã ¹ß»ı½ÃÅ²´Ù. ¿¹¿Ü µÇ´øÁö±â(re-throwing)
+		throw e; // ì˜ˆì™¸ë¥¼ ë‹¤ì‹œ ë°œìƒì‹œí‚¨ë‹¤. ì˜ˆì™¸ ë˜ë˜ì§€ê¸°(re-throwing)
 		} catch(Exception e) {
 		System.out.println(3);
 		} finally {
@@ -24,6 +24,7 @@ public class first {
 		System.out.println(5);
 		} // method1()
 		static void method2() {
-		throw new NullPointerException(); // NullPointerExceptionÀ» ¹ß»ı½ÃÅ²´Ù.
+		throw new NullPointerException(); // NullPointerExceptionì„ ë°œìƒì‹œí‚¨ë‹¤.
 		}
+
 }
